@@ -9,7 +9,7 @@ export default function handler(
 ) {
 	const cookies = new Cookies(req, res);
 
-	const guess = req.query.guess;
+	const guess = req.query.guess.toString();
 
 	let status = 404;
 
