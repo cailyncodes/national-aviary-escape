@@ -7,8 +7,13 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: blue;
+  text-decoration: underline;
+}
+
+button a {
+	color: unset;
+	text-decoration: none;
 }
 
 * {
