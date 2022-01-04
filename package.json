@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/cookies": "^0.7.7",
     "cookies": "^0.8.0",
     "next": "12.0.7",
     "react": "17.0.2",
