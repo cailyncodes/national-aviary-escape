@@ -51,7 +51,8 @@ const LevelTwo: NextPage<{ url: string | null }> = ({ url }) => {
 	)
 }
 
-export function getServerSideProps({ req, res }) {
+export function getServerSideProps(context: any) {
+	const { req, res } = context;
 
 	const cookies = new Cookies(req, res);
 
