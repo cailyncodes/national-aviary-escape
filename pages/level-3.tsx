@@ -36,7 +36,7 @@ const LevelThree: NextPage<{ url: string | null }> = ({ url }) => {
 
 				<div>
 					<label htmlFor="input">Guess:{' '}</label>
-					<input name="input" defaultValue={input} onInput={e => setInput(e.target.value)} />
+					<input name="input" defaultValue={input} onInput={e => setInput((e.target as any).value)} />
 					<br />
 					<br />
 					<div style={{ margin: "0 auto", width: "min-content" }}>
