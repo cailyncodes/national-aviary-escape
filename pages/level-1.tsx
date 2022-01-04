@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/LevelOne.module.css'
 import { useState } from 'react'
 
-const LevelOne: NextPage = ({ url }) => {
+const LevelOne: NextPage<{ url: string | null }> = ({ url }) => {
 	const [input, setInput] = useState('');
 	const [error, setError] = useState(false);
 

@@ -4,7 +4,7 @@ import styles from '../styles/LevelOne.module.css'
 import { useState } from 'react'
 import Cookies from 'cookies';
 
-const LevelThree: NextPage = ({ url }) => {
+const LevelThree: NextPage<{ url: string | null }> = ({ url }) => {
 	const [input, setInput] = useState('');
 	const [error, setError] = useState(false);
 
