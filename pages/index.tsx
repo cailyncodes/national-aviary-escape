@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
 	return (
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
 					<a href="https://docs.google.com/document/d/1bI9MeZ_xE3iE0piS5RnAam-3uBucCKlI4jc16TNh0zc/edit?usp=sharing">Instructions</a>
 				</p>
 
-				<button><a href="/level-1">Continue</a></button>
+				<button><Link href="/level-1">Continue</Link></button>
 			</main>
 		</div>
 	)
