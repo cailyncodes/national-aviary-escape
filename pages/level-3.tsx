@@ -56,9 +56,9 @@ export function getServerSideProps(context: any) {
 
 	const cookies = new Cookies(req, res);
 
-	const levelOne = cookies.get('level-two-ans');
+	const levelTwo = cookies.get('level-two-ans');
 
-	if (process.env.LEVEL_TWO_ANS && levelOne === process.env.LEVEL_TWO_ANS) {
+	if (process.env.LEVEL_TWO_ANS && levelTwo === process.env.LEVEL_TWO_ANS) {
 		return {
 			props: {
 				url: process.env.LEVEL_THREE_URL || null,
