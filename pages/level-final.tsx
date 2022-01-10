@@ -27,7 +27,7 @@ const LevelThree: NextPage<{ url: string | null }> = ({ url }) => {
 
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-					Puzzle 3
+					Meta Puzzle
 				</h1>
 
 				<p className={styles.description}>
